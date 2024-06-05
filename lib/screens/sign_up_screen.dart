@@ -7,6 +7,7 @@ class SignUpScreen extends StatelessWidget {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController = TextEditingController();
   final TextEditingController fullNameController = TextEditingController();
+  final TextEditingController addressController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +30,8 @@ class SignUpScreen extends StatelessWidget {
               controller: emailController,
             ),
             SizedBox(height: 10),
+            CustomTextField(labelText: "Address", controller: addressController),
+            SizedBox(height: 16,),
             CustomTextField(
               labelText: 'Password',
               controller: passwordController,
